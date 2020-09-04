@@ -1,0 +1,35 @@
+{
+  "name": "function-masks",
+  "version": "0.0.1",
+  "description": "Function masks to be used by any variable, like inputs in a website",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "gulp app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavesan/function-masks.git"
+  },
+  "keywords": [
+    "javascript",
+    "helpers",
+    "mask",
+    "function mask"
+  ],
+  "author": "Valdery Alves Paes Júnior <https://valderyalves.com> (valdery.jur@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lavesan/function-masks/issues"
+  },
+  "homepage": "https://github.com/lavesan/function-masks#readme",
+  "prepublish": "npm run build",
+  "devDependencies": {
+    "babel-core": "~6.26.3",
+    "babel-preset-env": "~1.7.0",
+    "gulp": "~4.0.2",
+    "gulp-babel": "~7.0.1",
+    "gulp-concat": "~2.6.1",
+    "gulp-uglify": "~3.0.2"
+  },
+  "dependencies": {}
+}
