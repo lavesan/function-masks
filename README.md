@@ -2,6 +2,8 @@
 
 Function masks to be used by any variable, like inputs in a website
 
+If there's some bug/feature, submit a Issue :D
+
 ## Pre-requisites
 
 - node
