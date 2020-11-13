@@ -82,6 +82,20 @@ export const onlyNumberStringToThreeDigit = value => {
 
 }
 
+export const onlyNumberStringToTwoDigit = value => {
+
+  let onlyNumberValue = String(value).replace(/\D/g, "").replace(/^[0]+/, "");
+
+  if (onlyNumberValue) {
+    while (onlyNumberValue.length < 3) {
+      onlyNumberValue = `0${onlyNumberValue}`;
+    }
+    return onlyNumberValue.replace(/(\d{1,2})$/, ",$1");
+  }
+  return "0,00";
+
+}
+
 export const percentageMask = value => {
   const [integer] = String(value).split('.');
   return `${integer} %`
